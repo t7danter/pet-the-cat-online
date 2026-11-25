@@ -8,7 +8,7 @@ The whole experience is one scene. A hand follows your pointer, a cat lies there
 
 You move. That is the entire interaction. Glide the pointer over the head, the back, or the belly, and the surface under your hand shifts softly while the rest of the body stays comparatively still. Move away and the impression fades. The response depends on where you touch, which direction you travel, and how fast you go, so a slow pass feels different from a quick flick even when both cross the same area.
 
-Clicking is not the mechanic. You are not tapping a target to collect a reward, and there is no correct sequence hidden in the scene. People who try to pet the cat by clicking rapidly tend to conclude the page is broken, when in fact they are simply using the wrong verb. Slow down, drag, and let the motion do the work instead of the pressure.
+Clicking is not the mechanic. You are not tapping a target to collect a reward, and there is no correct sequence hidden in the scene. People who try to stroke the cat by clicking rapidly tend to conclude the page is broken, when in fact they are simply using the wrong verb. Slow down, drag, and let the motion do the work instead of the pressure.
 
 ## The cats and the three poses
 
@@ -24,11 +24,11 @@ Breathing is a separate layer, a slow rise and fall around the torso that contin
 
 ## Phones, tablets, and small screens
 
-The scene is landscape-first. On a phone, turning the device sideways gives the gestures more room and moves the controls to the left edge. Sliding inside the play area lets you pet the cat rather than scrolling the page, which is the behaviour you want until you try to read the text below it; scroll outside the scene and the article moves normally. Fullscreen uses the native API where it exists and falls back to a page-filling layout where it does not.
+The scene is landscape-first. On a phone, turning the device sideways gives the gestures more room and moves the controls to the left edge. Sliding inside the play area runs your finger over the cat rather than scrolling the page, which is the behaviour you want until you try to read the text below it; scroll outside the scene and the article moves normally. Fullscreen uses the native API where it exists and falls back to a page-filling layout where it does not.
 
 ## What it is not
 
-It is not a three-dimensional model you can orbit. It is not a live camera feed of a real animal, and you cannot rotate the scene to pet the cat from an angle the artist never drew. The cats are generated photographic-style images with interactive motion layered on top, and the site says so plainly. Knowing that helps you calibrate: you are not going to find a hidden camera position, and you are not supposed to.
+It is not a three-dimensional model you can orbit. It is not a live camera feed of a real animal, and you cannot rotate the scene to reach the cat from an angle the artist never drew. The cats are generated photographic-style images with interactive motion layered on top, and the site says so plainly. Knowing that helps you calibrate: you are not going to find a hidden camera position, and you are not supposed to.
 
 It is also not a game with a fail state. There are no points, no levels, no unlocks, and no daily obligation. The absence of those things is what makes a two-minute visit feel like a break instead of a task with a deadline attached.
 
@@ -48,19 +48,19 @@ If the page reports that the scene needs WebGL, hardware acceleration is probabl
 
 Open the page, pick a cat, and choose the side view. Start at the shoulder and draw one long line toward the back, then lift your hand and watch the body settle before starting again. Turn breathing on and repeat the same stroke to feel the difference the extra motion makes. Then switch to the belly view, where the reachable area is much wider, and notice that the same gesture produces a different response simply because the surface underneath has changed.
 
-None of this is required, and there is no wrong way to pet the cat once the basic input is clear. It is just a way to see what the scene can do before deciding you are finished with it.
+None of this is required, and there is no wrong way to do it once the basic input is clear. It is just a way to see what the scene can do.
 
 ## Questions people ask before trying it
 
-**Does anything happen if I stay for a long time?** No. Duration is not tracked, rewarded, or displayed, and there is no hidden progress bar that fills up while you sit there.
+**Does anything happen if I stay long?** No. Duration is not tracked or displayed, and there is no hidden progress bar.
 
 **Can I pet the cat with a trackpad?** Yes, and with a mouse, a stylus, or a finger. The scene reads pointer movement, so precision devices and touchscreens both work; the only requirement is that you pet the cat inside the play area.
 
-**Does it work offline?** Not fully. The page loads assets over the network on first visit, so an initial connection is needed even though the interaction itself is lightweight once everything is cached.
+**Does it work offline?** Not fully: assets load over the network on first visit, so an initial connection is needed even though the interaction stays light once cached.
 
-**Is there a mobile app?** There is no app to install. The browser version is the product, which is why it opens immediately and why there is nothing to update.
+**Is there a mobile app?** No. The browser version is the product, so there is nothing to install or update.
 
-**Will it remember my cat and my settings?** Display preferences such as breathing and fullscreen behaviour are stored in the browser when storage is available, so a return visit generally restores the look you left behind.
+**Will it remember my settings?** Display preferences such as breathing and fullscreen behaviour are stored in the browser, so a return visit usually restores the look you left behind.
 
 ## Where to find it
 
