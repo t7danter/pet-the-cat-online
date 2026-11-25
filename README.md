@@ -1,88 +1,69 @@
 # Pet the Cat Online
 
-A minimal guide to **Pet the Cat** — a free browser-based cat-petting simulator with no download, no account, and no goals.
+There are two kinds of browser games: the ones that want something from you, and the ones that simply let you sit down for a minute. This page is about the second kind. If you have ever wanted to pet the cat on a screen without installing an app, creating an account, or being told that you failed, the site behind this repository was built for exactly that moment.
 
-> Play it here: **https://petthecatonline.com/**
+The whole experience is one scene. A hand follows your pointer, a cat lies there breathing, and nothing else happens unless you make it happen. No timer runs in the corner. No score climbs. There is no streak to protect and no reason to feel guilty about closing the tab after thirty seconds. That restraint is the point, and it is rarer than it should be.
 
----
+## What you actually do
 
-## What this is
+You move. That is the entire interaction. Glide the pointer over the head, the back, or the belly, and the surface under your hand shifts softly while the rest of the body stays comparatively still. Move away and the impression fades. The response depends on where you touch, which direction you travel, and how fast you go, so a slow pass feels different from a quick flick even when both cross the same area.
 
-Pet the Cat Online is a cozy interactive toy, not a game with a score. A hand follows your mouse or finger, and a photographic-style cat responds to how you move over it. You can stay for three strokes or for a long quiet break — nothing tracks your time.
+Clicking is not the mechanic. You are not tapping a target to collect a reward, and there is no correct sequence hidden in the scene. People who try to pet the cat by clicking rapidly tend to conclude the page is broken, when in fact they are simply using the wrong verb. Slow down, drag, and let the motion do the work instead of the pressure.
 
-- Built with WebGL, runs directly in the browser
-- 8 cats × 3 poses = 24 combinations
-- Free, no registration, no download
+## The cats and the three poses
 
-## Quick start
+Eight cats are available, each with its own coat and face: an orange tabby, a British Shorthair, a calico, a Siamese, a silver tabby, a black cat, a Maine Coon, and a Ragdoll. Switching between them keeps the same controls, so there is nothing new to learn when you change your mind halfway through a visit.
 
-1. Open https://petthecatonline.com/
-2. Move your pointer gently across the cat — that alone is the whole interaction
-3. Click or touch the cat once to enable sound (sound starts muted by design)
-4. Pick a different cat or pose from the menu above the scene whenever you feel like it
+Each cat comes in three resting poses. Side shows a curled animal seen from the side. Sprawl shows a stretched-out cat viewed from above. Belly shows a relaxed, belly-up position with a broad central area to explore. These are separate images rather than one model rotated on an axis, which means the body shape really does change, and so does the part of the animal within reach when you pet the cat in a new pose.
 
-On a phone, turn the device sideways — the scene is landscape-first and the controls move to the left edge.
+## Sound, breathing, and the option to turn everything off
 
-## How to play
+Audio is off until you enable it, which is deliberate. Once sound is on, it follows your strokes rather than looping in the background: keep moving and you hear it, lift your hand and it stops. If silence is what you came for, leave it alone. Nothing nags you to turn it on, and no prompt appears if you pet the cat in complete quiet for ten minutes.
 
-### 1. Choose a companion
+Breathing is a separate layer, a slow rise and fall around the torso that continues independently of your hand. It can be switched off entirely for a completely still image. Browsers that report a reduced-motion preference start with breathing disabled, and your choice is remembered locally so you do not have to set it again on the next visit.
 
-The **Cat** menu switches between the eight cats:
+## Phones, tablets, and small screens
 
-| Cat | Look |
-| --- | --- |
-| Marmalade | Orange tabby, sleepy expression (default) |
-| Mochi | Blue British Shorthair, round cheeks |
-| Patches | Calico |
-| Coco | Siamese |
-| Luna | Silver tabby |
-| Onyx | Black cat |
-| Maple | Maine Coon |
-| Cloud | Ragdoll |
+The scene is landscape-first. On a phone, turning the device sideways gives the gestures more room and moves the controls to the left edge. Sliding inside the play area lets you pet the cat rather than scrolling the page, which is the behaviour you want until you try to read the text below it; scroll outside the scene and the article moves normally. Fullscreen uses the native API where it exists and falls back to a page-filling layout where it does not.
 
-Switching cats keeps the same controls — there is no separate ruleset per breed.
+## What it is not
 
-### 2. Choose a pose
+It is not a three-dimensional model you can orbit. It is not a live camera feed of a real animal, and you cannot rotate the scene to pet the cat from an angle the artist never drew. The cats are generated photographic-style images with interactive motion layered on top, and the site says so plainly. Knowing that helps you calibrate: you are not going to find a hidden camera position, and you are not supposed to.
 
-| Pose | Description |
-| --- | --- |
-| **Side** | Curled up, resting side view |
-| **Sprawl** | Stretched out, viewed from above |
-| **Belly** | Relaxed, belly-up |
+It is also not a game with a fail state. There are no points, no levels, no unlocks, and no daily obligation. The absence of those things is what makes a two-minute visit feel like a break instead of a task with a deadline attached.
 
-Each pose is a separate image rather than a rotated camera, so the body shape and the areas you can reach actually change.
+## Why a page like this exists
 
-### 3. Pet with movement, not clicks
+Most of the web is engineered to keep you. Autoplay, badges, countdowns, and notification prompts all assume that attention is a resource to be harvested. A site that asks nothing back is a small corrective. You arrive, you pet the cat a few times, the body settles, and you leave. That is a complete session, and nobody sends you an email about it afterwards.
 
-This is the core mechanic: **the cat responds to a moving hand.** Contact position, direction and speed all shape the reaction. The surface right under your hand shifts softly while distant areas stay steady, and the impression fades as you move away.
+There is a practical side too. Short, low-stakes interactions are useful for testing a trackpad, checking whether a touchscreen registers gentle drags, or giving a child something harmless to do for a minute. A scene this simple makes those checks obvious rather than buried under menus and settings.
 
-- Short, small circles around the head or cheeks
-- Long slow passes from shoulder to back
-- Slow down between strokes and watch the body settle before starting again
+## Getting past the first ten seconds
 
-There is no hidden target to hit and no correct sequence. Deliberate motion beats frantic motion.
+The most common confusion is not technical. It is simply not knowing how to pet the cat: movement is the input, and clicking is not. The second most common is expecting sound immediately; browsers require a gesture before audio can start, so one click or tap is needed before the first stroke produces anything at all.
 
-### 4. Play with the tail
+If the page reports that the scene needs WebGL, hardware acceleration is probably disabled or the browser is unusually old. If nothing responds, check that you are moving the pointer inside the play area rather than over the surrounding article. And if you switch cats and the picture seems to jump, that is expected: each combination is its own image rather than a continuous camera move.
 
-Press or touch the tail, drag it gently, then release. It stretches only so far and springs back. If a gesture gets stuck mid-drag — rotating the phone or resizing the window does this — use **Start fresh** to restore the starting position.
+## A short routine worth trying
 
-### 5. Tune sound and breathing
+Open the page, pick a cat, and choose the side view. Start at the shoulder and draw one long line toward the back, then lift your hand and watch the body settle before starting again. Turn breathing on and repeat the same stroke to feel the difference the extra motion makes. Then switch to the belly view, where the reachable area is much wider, and notice that the same gesture produces a different response simply because the surface underneath has changed.
 
-- **Sound** — follows your strokes only. Enabling sound permits audio; it does not loop a soundtrack while you are idle. Lift your hand and playback stops.
-- **Breathing** — a slow rise and fall around the torso, independent of your hand. Toggle it off for a completely still scene. If your system asks for reduced motion, breathing starts disabled.
-- **Fullscreen** — native fullscreen where supported, page-filling fallback otherwise. Escape exits.
+None of this is required, and there is no wrong way to pet the cat once the basic input is clear. It is just a way to see what the scene can do before deciding you are finished with it.
 
-Your breathing preference is remembered in the browser (via local storage).
+## Questions people ask before trying it
 
-## Things worth knowing
+**Does anything happen if I stay for a long time?** No. Duration is not tracked, rewarded, or displayed, and there is no hidden progress bar that fills up while you sit there.
 
-- **Not a 3D model.** The cats are generated photographic images with interactive motion layered on top — no free camera rotation, no live feed.
-- **No fail state.** No points, timers, streaks or rewards. Faster is not better.
-- **Mobile gestures stay in the scene.** Sliding inside the play area pets the cat instead of scrolling the page; scroll outside the scene to read further.
-- **Troubleshooting.** A "cozy spot needs WebGL" message means hardware acceleration is off or the browser is too old. No sound usually means sound was never enabled, no stroke was made after enabling, or the tab or device is muted.
+**Can I pet the cat with a trackpad?** Yes, and with a mouse, a stylus, or a finger. The scene reads pointer movement, so precision devices and touchscreens both work; the only requirement is that you pet the cat inside the play area.
 
-## Repository purpose
+**Does it work offline?** Not fully. The page loads assets over the network on first visit, so an initial connection is needed even though the interaction itself is lightweight once everything is cached.
 
-This repo documents how Pet the Cat works so players can get past the "what am I supposed to do?" moment. It is a guide, not the game's source code.
+**Is there a mobile app?** There is no app to install. The browser version is the product, which is why it opens immediately and why there is nothing to update.
 
-Official site: **https://petthecatonline.com/**
+**Will it remember my cat and my settings?** Display preferences such as breathing and fullscreen behaviour are stored in the browser when storage is available, so a return visit generally restores the look you left behind.
+
+## Where to find it
+
+The site is free, needs no registration, and runs in any modern browser with WebGL enabled. If you would like to pet the cat yourself, the official page is https://petthecatonline.com/ and it opens straight into the scene with no intermediate screens or sign-up forms.
+
+That is the whole guide. Everything else is a matter of how long you feel like staying.
